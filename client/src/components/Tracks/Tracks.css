@@ -1,0 +1,15 @@
+ul {
+  counter-reset: rowNumber;
+}
+
+ul li {
+  counter-increment: rowNumber;
+}
+
+.trackNum strong::before {
+  content: counter(rowNumber);
+}
+
+/* .media {
+  cursor: pointer;
+} */

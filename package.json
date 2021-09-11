@@ -1,0 +1,23 @@
+{
+  "name": "spotify-playlist-creator",
+  "version": "1.0.0",
+  "scripts": {
+    "client": "cd client && npm start",
+    "server": "nodemon app.js",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+    "start": "node app.js",
+    "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.4",
+    "dotenv": "^6.0.0",
+    "express": "~4.16.0",
+    "path": "^0.12.7",
+    "querystring": "~0.2.0",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "concurrently": "^3.6.1"
+  }
+}

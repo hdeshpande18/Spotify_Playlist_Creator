@@ -1,0 +1,8 @@
+.navbar {
+  min-height: 80px;
+  background: #191414;
+}
+
+.navbar-brand {
+  font-size: 26px !important;
+}
